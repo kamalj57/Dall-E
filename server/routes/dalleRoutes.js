@@ -8,7 +8,7 @@ const router = express.Router();
 
 
 const openai = new OpenAI({
-  organization: 'org-9w6j0b12MvccoAqIkuRPMtJf',
+  organization: process.env.OPENAI_ORGANIZATION,
 });
 router.route('/').get((req, res) => {
     res.send("Hello from dalle");
