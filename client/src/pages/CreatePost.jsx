@@ -6,7 +6,7 @@ import { getRandomPrompt } from '../utils';
 import { FormField, Loader } from '../components';
 import { downloadImage } from "../utils";
 
-console.log(baseUrl)
+
 const CreatePost = () => {
   const navigate = useNavigate();
 
@@ -58,7 +58,7 @@ const CreatePost = () => {
     if (form.prompt && form.photo) {
       setLoading(true);
       try {
-        const response = await fetch('https://sdalle.onrender.com/api/v1/post', {
+        const response = await fetch(`${baseUrl}/api/v1/post`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
