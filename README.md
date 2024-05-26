@@ -32,7 +32,7 @@ Before you begin, ensure you have the following prerequisites:
 1.Frontend Configuration :
 
 - Create a .env file in the client directory
-- REACT_APP_API_URL=Deployed WebserviceURL  # Update with your server
+- VITE_REACT_APP_API=Deployed WebserviceURL  # Update with your server
 
 2.Server Configuration :
 
